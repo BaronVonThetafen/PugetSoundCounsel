@@ -1,0 +1,17 @@
+# Robots.txt file for SEO Optimization
+# Law Firm specializing in Intellectual Property and Legal Services for Seattle and the Greater Puget Sound Region
+
+User-agent: *
+Disallow: /admin/        # Prevent indexing of admin or backend pages
+Disallow: /scripts/      # Prevent indexing of JavaScript files
+Disallow: /assets/       # Prevent indexing of assets like images and fonts
+Disallow: /private/      # Prevent indexing of private or sensitive directories
+
+Allow: /                 # Allow indexing of public-facing pages
+
+# Sitemap reference for search engines
+Sitemap: https://www.pugetsoundcounsel.com/sitemap.xml
+
+# Keywords for SEO
+# Focused on Seattle and Greater Puget Sound Region
+# Practice Areas: Privacy Policies, Intellectual Property Protection for Video Games, Augmented Reality, Stored Communications Act Advice, Smart Contracts, SAAS Agreements, Mobile App Privacy Policies, COPPA Compliance, USA Data Protection, Canada Data Protection, AI Wage and Hour Issues, AI in the Workplace, AI Copyright Registration Considerations, Patenting AI, Deepfake AI Issues, Social Media IP Protection, DMCA Trade Secrets Overview, CAN-SPAM Compliance, IP Software Protection Considerations, Open Source Software Considerations, DTSA Fundamentals, Trade Secret Fundamentals, Assigning Trademarks, Trademark Infringement Claims, Trademark Registration, Rights Clearance, Fair Use Considerations, Copyright Fundamentals, Insurance Coverage for IP Risks, Corporate IP Protection Plan, International IP Rights, Primer on Patent Applications, Primer on Patent Enforcement, Primer on Patent Validity Challenges, Advice on Managing Inventions, and DCMA Compliance.
