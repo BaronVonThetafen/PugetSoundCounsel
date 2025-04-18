@@ -46,25 +46,39 @@
         }
         .bio-section {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            align-items: flex-start;
             background: linear-gradient(to right, #d9e3eb 30%, #ffffff 70%);
             padding: 20px;
             border-radius: 10px;
+            flex-wrap: wrap; /* Allow content to wrap on small screens */
         }
         .bio-image {
             width: 300px;
             height: auto;
             border-radius: 50%;
+            margin-right: 20px; /* Add spacing between the image and content */
         }
         .bio-content {
             flex: 1;
-            margin-left: 20px;
         }
         footer {
             text-align: center;
             font-size: 14px;
             color: #555;
+        }
+
+        /* Media query for smaller screen widths */
+        @media (max-width: 768px) {
+            .bio-section {
+                flex-direction: column; /* Stack items vertically */
+                text-align: center; /* Center-align content on narrow screens */
+            }
+            .bio-image {
+                margin: 0 auto 20px; /* Center the image and add spacing below it */
+            }
+            .bio-content {
+                margin: 0; /* Remove any left margin in mobile view */
+            }
         }
     </style>
 </head>
@@ -87,15 +101,13 @@
             <div class="bio-content">
                 <h2>About Mitchell</h2>
                 <p>
-                    Mitchell D. West is a litigation attorney with Lowe Graham Jones PLLC, combining expertise in litigation with a deep understanding of Seattle’s startup ecosystem. Mitch has collaborated with innovative companies in software development, cryptocurrency projects, and legal technology.</p>
-
-<p>Mitch has represented clients in a range of sophisticated disputes, including trade secret litigation involving silicon-carbon anode technology, patent cases spanning plant varieties to thermoforming equipment, high-stakes business divorces involving complex IP portfolios, and trademark disputes resolved through strategic negotiation.
-While specializing in litigation, Mitch also advises emerging technology companies on legal challenges to avoid disputes and ensures they succeed when litigation arises.</p>
-
-<p>As part of his commitment to leveraging technology in legal practice, Mitch developed a Retrieval-Augmented Generation (RAG) chatbot built on a curated set of legal documents he regularly uses in his day-to-day work, and hosted on a hybrid decentralized computing platform he contributes to. This tool is designed to help users get basic legal questions answered quickly—saving time and providing clarity—before reaching out to Mitch for advice on complex, high-stakes matters.
-
-
-
+                    Mitchell D. West is a litigation attorney with Lowe Graham Jones PLLC, combining expertise in litigation with a deep understanding of Seattle’s startup ecosystem. Mitch has collaborated with innovative companies in software development, cryptocurrency projects, and legal technology.
+                </p>
+                <p>
+                    Mitch has represented clients in a range of sophisticated disputes, including trade secret litigation involving silicon-carbon anode technology, patent cases spanning plant varieties to thermoforming equipment, high-stakes business divorces, and trademark disputes resolved through strategic negotiation.
+                </p>
+                <p>
+                    While specializing in litigation, Mitch also advises emerging technology companies on legal challenges to avoid disputes and ensures they succeed when litigation arises.
                 </p>
                 <p>
                     Learn more about Mitch at <a href="https://lowegrahamjones.com/attorneys/mitchell-west/" target="_blank">Lowe Graham Jones PLLC</a>.
@@ -120,8 +132,8 @@ While specializing in litigation, Mitch also advises emerging technology compani
         </section>
         <section>
             <h2>Contact Us</h2>
-            <form action="https://formsubmit.co/your-email@example.com" method="POST">
-                <input type="hidden" name="_next" value="https://your-website.com/thank-you">
+            <form action="https://formsubmit.co/westlinelaw@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://www.pugetsoundcounsel.com/thank-you">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
